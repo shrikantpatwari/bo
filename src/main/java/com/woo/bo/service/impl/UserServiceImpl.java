@@ -1,11 +1,11 @@
-package com.woo.bo.service.serviceImpl;
+package com.woo.bo.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.woo.bo.UserEntity.WooUser;
-import com.woo.bo.data.entity.repo.WooUserRepo;
-import com.woo.bo.service.UserService;
+import com.woo.bo.data.entity.WooUser;
+import com.woo.bo.data.repository.WooUserRepo;
+import com.woo.bo.service.api.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 @Autowired

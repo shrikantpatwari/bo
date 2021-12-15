@@ -1,6 +1,6 @@
-package com.woo.bo.service;
+package com.woo.bo.service.api;
 
-import com.woo.bo.UserEntity.WooUser;
+import com.woo.bo.data.entity.WooUser;
 
 public interface UserService {
 

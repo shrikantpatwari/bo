@@ -1,4 +1,4 @@
-package com.woo.bo.UserEntity;
+package com.woo.bo.data.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
