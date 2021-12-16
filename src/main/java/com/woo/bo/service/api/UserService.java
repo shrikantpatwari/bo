@@ -4,8 +4,5 @@ import com.woo.bo.data.entity.WooUser;
 
 public interface UserService {
 
-	long save(WooUser wooUser);
-
 	WooUser saveUser(WooUser wooUser);
-
 }
