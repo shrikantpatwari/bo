@@ -17,16 +17,5 @@ private WooUserRepo wooUserRepo;
 	@Override
 	public long save(WooUser wooUser) {
 		return wooUserRepo.save(wooUser).getUserId();
-
-@Service
-public class UserServiceImpl implements UserService {
-@Autowired
-private WooUserRepo wooUserRepo;
-	@Override
-	public WooUser saveUser(WooUser wooUser) {
-		
-		return wooUserRepo.save(wooUser);
-
 	}
-
 }
