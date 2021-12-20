@@ -22,7 +22,7 @@ public class BoApplication {
 		return args -> {
 			String[] beanNames = ctx.getBeanDefinitionNames();
 			Arrays.sort(beanNames);
-			Arrays.stream(beanNames).forEach(beanName -> log.info(beanName));
+			//Arrays.stream(beanNames).forEach(beanName -> log.info(beanName));
 		};
 	}
 }

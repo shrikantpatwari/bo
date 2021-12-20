@@ -1,32 +1,37 @@
 package com.woo.bo.data.entity;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import javax.validation.Valid;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 import lombok.Data;
+
 
 @Entity
 @Table(name="wooUser")
 @Data
 public class WooUser {
 	@Id
-
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long userId;
+	@NotNull
+	@NotBlank(message="Please enter username")
 	private String userName;
-	private String sponserName;
-	private long sponserId;
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long userId;
-	private String userName;
-	private String sponserName;
-	private long SponserId;
+	@Valid
+	private String password;
+	@NotNull
+	@NotBlank(message="Please enter your phone number")
+	private String mobilePhone;
+	private String walletAddress;
+	@Email
+	@NotEmpty
+	private String email;	
+	private String role="user";
 	
 	
-
+	
 }
